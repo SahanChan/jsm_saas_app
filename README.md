@@ -2,7 +2,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### Setting up Clerk Authentication
+
+This project uses [Clerk](https://clerk.com/) for authentication. To set up Clerk:
+
+1. Create an account on [Clerk](https://clerk.com/) and create a new application.
+2. Copy your API keys from the Clerk dashboard.
+3. Update the `.env.local` file with your Clerk API keys:
+
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key_here
+CLERK_SECRET_KEY=your_secret_key_here
+```
+
+### Running the Development Server
+
+Run the development server:
 
 ```bash
 npm run dev
