@@ -2,13 +2,13 @@
 
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import {subjects} from "@/constants";
-import {usePathname, useRouter, useSearchParams} from "next/navigation";
+import {useRouter, useSearchParams} from "next/navigation";
 import {useEffect, useState} from "react";
 import {formUrlQuery, removeKeysFromUrlQuery} from "@jsmastery/utils";
 
 
 const SubjectFilter = () => {
-    const pathname = usePathname();
+
     const router = useRouter();
     const searchParams = useSearchParams();
     const query = searchParams.get('subject') || '';
